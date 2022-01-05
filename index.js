@@ -134,7 +134,7 @@ async function starts() {
 		success('2', 'Sukses, Sc by Aprilia')
 	})
 	await client.connect({timeoutMs: 30*1000})
-        fs.writeFileSync('./apri.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
+        fs.writeFileSync('./session.json', JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
         /*
         //FUNTION JAN DI GANTI EROR
 const client = new WAConnection()
